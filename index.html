@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Interativo</title>
+</head>
+<body>
+  <h1>Formulário Interativo</h1>
+  <form id="formulario">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <span class="erro" id="erroNome"></span>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span class="erro" id="erroEmail"></span>
+    <br><br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" required min="1">
+    <span class="erro" id="erroIdade"></span>
+    <br><br>
+
+    <label>Você gosta de programação?</label><br>
+    <input type="radio" name="programacao" value="sim" required> Sim
+    <input type="radio" name="programacao" value="nao" required> Não
+    <span class="erro" id="erroProgramacao"></span>
+    <br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="resposta"></div>
+
+  <script src="script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.erro {
+  color: red;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+#resposta {
+  margin-top: 20px;
+  font-weight: bold;
+}
